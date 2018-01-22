@@ -1,0 +1,16 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "My schema",
+    "additionalProperties": false,
+    "properties": {
+        "header": {
+            "type": "string",
+            "title": "Heading"
+        },
+        "description": {
+            "type": "string",
+            "title":"Description"
+        }
+    }
+}
