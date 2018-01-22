@@ -1,7 +1,7 @@
 ﻿{
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
     "type": "object",
-    "title": "My schema",
+    "title": "Very Basic schema",
     "additionalProperties": false,
     "properties": {
         "header": {
@@ -10,7 +10,7 @@
         },
         "description": {
             "type": "string",
-            "title":"Description"
+            "title": "Description"
         }
     }
 }
