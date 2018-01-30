@@ -31,7 +31,7 @@
             ]
         },
         "h-align": {
-            "type": "string",
+            
             "title": "Horizontol Alignment",
             "enum": [
                 "left",
