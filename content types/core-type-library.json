@@ -32,7 +32,7 @@
         },
         "h-align": {
             
-            "title": "Horizontol Alignment",
+            "title": "Horizontal Alignment",
             "enum": [
                 "left",
                 "center",
@@ -63,9 +63,7 @@
                     "format": "text"
                 },
                 "alignment": {
-                    "$ref": "#/definitions/h-align",
-                    "title": "Align text",
-                    "description": "Text Alignment"
+                    "$ref": "#/definitions/h-align"
                 }
             }
         },
