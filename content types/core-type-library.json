@@ -87,14 +87,13 @@
                 },
                 "alignment": {
                     "$ref": "#/definitions/h-align",
-                    "title": "Align text",
-                    "description": "Text Alignment"
+                    "title": "Align text"
                 }
             },
             "propertyOrder": [
                 "text",
                 "classes",
-                "style"
+                "alignment"
             ]
         },
         "aligned-text-block": {
