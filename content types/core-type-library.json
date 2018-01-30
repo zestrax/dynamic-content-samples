@@ -24,7 +24,7 @@
         "v-align": {
             "type": "string",
             "title": "Vertical Alignment",
-            "Enum": [
+            "enum": [
                 "top",
                 "middle",
                 "bottom"
@@ -33,7 +33,7 @@
         "h-align": {
             "type": "string",
             "title": "Horizontol Alignment",
-            "Enum": [
+            "enum": [
                 "left",
                 "center",
                 "right"
