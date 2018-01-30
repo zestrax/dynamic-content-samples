@@ -1,0 +1,213 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Core type schema",
+    "definitions": {
+        "positioning-top-left": {
+            "type": "object",
+            "title": "position",
+            "description": "position fields using % offset from top and left ",
+            "additionalProperties": false,
+            "properties": {
+                "top": {
+                    "type": "number",
+                    "title": "Top %"
+                },
+                "left": {
+                    "type": "number",
+                    "title": "Left %"
+                }
+            }
+        },
+        "v-align": {
+            "type": "string",
+            "title": "Vertical Alignment",
+            "Enum": [
+                "top",
+                "middle",
+                "bottom"
+            ]
+        },
+        "h-align": {
+            "type": "string",
+            "title": "Horizontol Alignment",
+            "Enum": [
+                "left",
+                "center",
+                "right"
+            ]
+        },
+        "alignment": {
+            "type": "object",
+            "title": "Alinment options",
+            "additionalProperties": false,
+            "properties": {
+                "h-align": {
+                    "$ref": "#/definitions/h-align"
+                },
+                "v-align": {
+                    "$ref": "#/definitions/v-align"
+                }
+            }
+        },
+        "aligned-text": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "text": {
+                    "type": "string",
+                    "title": " Text",
+                    "description": "Line of text",
+                    "format": "text"
+                },
+                "alignment": {
+                    "$ref": "#/definitions/h-align",
+                    "title": "Align text",
+                    "description": "Text Alignment"
+                }
+            }
+        },
+        "flexy-styled-text": {
+            "type": "object",
+            "title": "Styled Text",
+            "description": "Text line that can be styled using classes and CSS",
+            "additionalProperties": false,
+            "properties": {
+                "text": {
+                    "type": "string",
+                    "title": "line of text",
+                    "description": "Actual text",
+                    "format": "text"
+                },
+                "classes": {
+                    "type": "string",
+                    "title": "CSS Classes",
+                    "description": "Add CSS classes with a space between each such as: crate-helvetica-light  headline-medium",
+                    "format": "text"
+                },
+                "alignment": {
+                    "$ref": "#/definitions/h-align",
+                    "title": "Align text",
+                    "description": "Text Alignment"
+                }
+            },
+            "propertyOrder": [
+                "text",
+                "classes",
+                "style"
+            ]
+        },
+        "aligned-text-block": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "block-alignment": {
+                    "$ref": "#/definitions/alignment",
+                    "title": "Text"
+                },
+                "text-items": {
+                    "type": "array",
+                    "title": "Text",
+                    "items": {
+                        "$ref": "#/definitions/aligned-text"
+                    }
+                }
+            }
+        },
+        "positioned-text-block": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "block-position": {
+                    "$ref": "#/definitions/positioning-top-left",
+                    "title": "Text"
+                },
+                "text-items": {
+                    "type": "array",
+                    "title": "Text",
+                    "items": {
+                        "$ref": "#/definitions/aligned-text"
+                    }
+                }
+            }
+        },
+        "aligned-styled-text-block": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "block-alignment": {
+                    "$ref": "#/definitions/alignment",
+                    "title": "Text"
+                },
+                "text-items": {
+                    "type": "array",
+                    "title": "Text",
+                    "items": {
+                        "$ref": "#/definitions/flexy-styled-text"
+                    }
+                }
+            }
+        },
+        "positioned-styled-text-block": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "block-position": {
+                    "$ref": "#/definitions/positioning-top-left",
+                    "title": "Text"
+                },
+                "text-items": {
+                    "type": "array",
+                    "title": "Text",
+                    "items": {
+                        "$ref": "#/definitions/flexy-styled-text"
+                    }
+                }                
+            }
+        },
+        "relative-link": {
+            "type": "object",
+            "title": "Link URL",
+            "properties": {
+                "text": {
+                    "type": "string",
+                    "maxLength": 155,
+                    "title": "Link Title",
+                    "format": "text"
+                },
+                "link": {
+                    "type": "string",
+                    "title": "Url",
+                    "description": "an absolute or relative url to link to from the call to action",
+                    "pattern": "^([a-z]:)*(\/*(.*[a-z0-9]+\/)*(.*[a-z0-9]+))"
+                }
+            },
+            "propertyOrder": [
+                "text",
+                "link"
+            ]
+        },
+        "fixed-link": {
+            "type": "object",
+            "title": "Link URL",
+            "properties": {
+                "text": {
+                    "type": "string",
+                    "maxLength": 155,
+                    "title": "Link Title",
+                    "format": "text"
+                },
+                "url": {
+                    "type": "string",
+                    "title": "Url",
+                    "description": "an absolute or relative url to link to from the call to action",
+                    "format": "uri"
+                }
+            },
+            "propertyOrder": [
+                "text",
+                "url"
+            ]
+        }
+    }
+}
