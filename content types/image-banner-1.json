@@ -1,7 +1,6 @@
 ﻿{
     "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
     "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content%20types/image-banner-1.json",
-    "Id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content%20types/image-banner-1.json",
     "type": "object",
     "title": "Image Banner 1",
     "description": "Image banner with ability to add 5 positional styled text blocks",
@@ -23,7 +22,7 @@
         "textBlocks": {
             "type": "array",
             "title": "Styled text blocks",
-            "description": "",
+            "description": "positional styled text blocks",
             "maxItems": 5,
             "items": {
                 "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content%20types/core-type-library.json#/definitions/positioned-styled-text-block"
