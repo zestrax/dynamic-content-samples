@@ -1,0 +1,53 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Core type schema",
+    "description":"core content type components to build content types",
+    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content%20types/core-type-library.json" ,
+    "definitions": {
+        "relative-link": {
+            "type": "object",
+            "title": "URL Link",
+            "properties": {
+                "text": {
+                    "type": "string",
+                    "maxLength": 155,
+                    "title": "Link Title",
+                    "format": "text"
+                },
+                "link": {
+                    "type": "string",
+                    "title": "Url",
+                    "description": "(__/__/__.___) a relative url to link",
+                    "pattern": "^([a-z]:)*(\/*(.*[a-z0-9]+\/)*(.*[a-z0-9]+))"
+                }
+            },
+            "propertyOrder": [
+                "text",
+                "link"
+            ]
+        },
+        "fixed-link": {
+            "type": "object",
+            "title": "Link URL",
+            "properties": {
+                "text": {
+                    "type": "string",
+                    "maxLength": 155,
+                    "title": "Link Title",
+                    "format": "text"
+                },
+                "url": {
+                    "type": "string",
+                    "title": "Url",
+                    "description": "an absolute fully qualified url",
+                    "format": "uri"
+                }
+            },
+            "propertyOrder": [
+                "text",
+                "url"
+            ]
+        }
+    }
+}
