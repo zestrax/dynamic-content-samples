@@ -1,0 +1,48 @@
+﻿{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content%20types/image-banner-1.json",
+    "type": "object",
+    "title": "Image Banner 1",
+    "description": "Image banner with ability to add 5 styled text blocks that can be positioned using percentage offsets (top:50%,left:50%)",
+    "properties": {
+        "image": {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+        },
+        "altText": {
+            "type": "string",
+            "title": "Main Image Alt Text",
+            "description": "Alt text for screen readers and improved SEO",
+            "format": "text"
+        },
+        "lazyload": {
+            "type": "boolean",
+            "title": "Lazy load flag",
+            "description": "Loads image when needed - may cause a delay in displaying banner background"
+        },
+        "textBlocks": {
+            "type": "array",
+            "title": "Styled text blocks",
+            "description": "positioned styled text blocks",
+            "maxItems": 5,
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content%20types/core-type-library.json#/definitions/positioned-styled-text-block"
+            }
+        },
+        "callToAction": {
+            "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content%20types//core-type-library.json#/definitions/relative-link"
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "propertyOrder": [
+        "image",
+        "altText",
+        "lazyload",
+        "inset",
+        "textBlocks",
+        "callToAction"
+    ]
+}

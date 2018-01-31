@@ -1,0 +1,36 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "http://c1.adis.ws/c/cmslabs/video-banner-ct",
+
+  "title": "Video Banner",
+  "description": "banner displaying video title and a call to action",
+
+  "allOf": [
+    { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content" }
+  ],
+
+  "type": "object",
+  "properties": {
+    "video": { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/video-link" },
+    "title": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 100,
+      "title": "Editorial Title",
+      "description": "optional header text",
+      "format": "text"
+    },
+    "textBlocks": {
+      "title": "Styled text blocks",
+      "description": "",
+      "type": "array",
+      "maxItems": 5,
+      "items": { "$ref": "http://c1.adis.ws/c/ampliencelabs/cb-core#/definitions/styled-text-block" }
+    },
+
+    "callToAction": { "$ref": "http://c1-qa.adis.ws/c/cmslabs/core#/definitions/call-to-action" }
+
+  },
+
+  "propertyOrder": ["video", "title", "text", "callToAction"]
+}
