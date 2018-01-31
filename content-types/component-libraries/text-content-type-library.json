@@ -5,53 +5,6 @@
     "description":"core content type components to build content types",
     "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content%20types/core-type-library.json" ,
     "definitions": {
-        "positioning-top-left": {
-            "type": "object",
-            "title": "position",
-            "description": "position fields using % offset from top and left ",
-            "additionalProperties": false,
-            "properties": {
-                "top": {
-                    "type": "number",
-                    "title": "Top %"
-                },
-                "left": {
-                    "type": "number",
-                    "title": "Left %"
-                }
-            }
-        },
-        "v-align": {
-            "type": "string",
-            "title": "Vertical Alignment",
-            "enum": [
-                "top",
-                "middle",
-                "bottom"
-            ]
-        },
-        "h-align": {
-            
-            "title": "Horizontal Alignment",
-            "enum": [
-                "left",
-                "center",
-                "right"
-            ]
-        },
-        "alignment": {
-            "type": "object",
-            "title": "Alinment options",
-            "additionalProperties": false,
-            "properties": {
-                "h-align": {
-                    "$ref": "#/definitions/h-align"
-                },
-                "v-align": {
-                    "$ref": "#/definitions/v-align"
-                }
-            }
-        },
         "aligned-text": {
             "type": "object",
             "additionalProperties": false,
@@ -67,7 +20,7 @@
                 }
             }
         },
-        "flexy-styled-text": {
+        "css-class-styled-text": {
             "type": "object",
             "title": "Styled Text",
             "description": "Text line that can be styled using classes and CSS",
@@ -163,50 +116,6 @@
                     }
                 }                
             }
-        },
-        "relative-link": {
-            "type": "object",
-            "title": "Link URL",
-            "properties": {
-                "text": {
-                    "type": "string",
-                    "maxLength": 155,
-                    "title": "Link Title",
-                    "format": "text"
-                },
-                "link": {
-                    "type": "string",
-                    "title": "Url",
-                    "description": "an absolute or relative url to link to from the call to action",
-                    "pattern": "^([a-z]:)*(\/*(.*[a-z0-9]+\/)*(.*[a-z0-9]+))"
-                }
-            },
-            "propertyOrder": [
-                "text",
-                "link"
-            ]
-        },
-        "fixed-link": {
-            "type": "object",
-            "title": "Link URL",
-            "properties": {
-                "text": {
-                    "type": "string",
-                    "maxLength": 155,
-                    "title": "Link Title",
-                    "format": "text"
-                },
-                "url": {
-                    "type": "string",
-                    "title": "Url",
-                    "description": "an absolute or relative url to link to from the call to action",
-                    "format": "uri"
-                }
-            },
-            "propertyOrder": [
-                "text",
-                "url"
-            ]
         }
     }
 }

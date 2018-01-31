@@ -3,7 +3,7 @@
     "type": "object",
     "title": "Core type schema",
     "description":"core content type components to build content types",
-    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content%20types/core-type-library.json",
+    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/alignment-content-type-library.json",
     "definitions": {
         "v-align": {
             "type": "string",
