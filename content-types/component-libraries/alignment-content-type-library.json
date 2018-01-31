@@ -6,7 +6,6 @@
     "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/alignment-content-type-library.json",
     "definitions": {
         "v-align": {
-            "type": "string",
             "title": "Vertical Alignment",
             "enum": [
                 "top",
@@ -25,7 +24,6 @@
         "alignment": {
             "type": "object",
             "title": "Alinment options",
-            "additionalProperties": false,
             "properties": {
                 "h-align": {
                     "$ref": "#/definitions/h-align"

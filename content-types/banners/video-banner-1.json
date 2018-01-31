@@ -1,8 +1,7 @@
-{
+﻿{
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "http://c1.adis.ws/c/cmslabs/video-banner-ct",
-
-  "title": "Video Banner",
+    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/banners/video-banner-1.json",
+    "title": "Video Banner",
   "description": "banner displaying video title and a call to action",
 
   "allOf": [
@@ -21,16 +20,18 @@
       "format": "text"
     },
     "textBlocks": {
-      "title": "Styled text blocks",
-      "description": "",
-      "type": "array",
-      "maxItems": 5,
-      "items": { "$ref": "http://c1.adis.ws/c/ampliencelabs/cb-core#/definitions/styled-text-block" }
+        "type": "array",
+        "title": "Styled text blocks",
+        "description": "positioned styled text blocks",
+        "maxItems": 5,
+        "items": {
+            "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/text-content-type-library.json#/definitions/positioned-styled-text-block"
+        }
     },
-
-    "callToAction": { "$ref": "http://c1-qa.adis.ws/c/cmslabs/core#/definitions/call-to-action" }
-
-  },
+    "callToAction": {
+        "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/links-content-type-library.json#/definitions/relative-link"
+    }
+},
 
   "propertyOrder": ["video", "title", "text", "callToAction"]
 }

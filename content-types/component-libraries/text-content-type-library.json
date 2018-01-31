@@ -3,7 +3,7 @@
     "type": "object",
     "title": "Core type schema",
     "description":"core content type components to build content types",
-    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content%20types/core-type-library.json" ,
+    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/text-content-type-library.json",
     "definitions": {
         "aligned-text": {
             "type": "object",
@@ -16,7 +16,7 @@
                     "format": "text"
                 },
                 "alignment": {
-                    "$ref": "#/definitions/h-align"
+                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/alignment-content-type-library.json#/definitions/h-align"
                 }
             }
         },
@@ -39,7 +39,7 @@
                     "format": "text"
                 },
                 "alignment": {
-                    "$ref": "#/definitions/h-align",
+                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/alignment-content-type-library.json#/definitions/h-align",
                     "title": "Align text"
                 }
             },
@@ -54,7 +54,7 @@
             "additionalProperties": false,
             "properties": {
                 "block-alignment": {
-                    "$ref": "#/definitions/alignment",
+                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/alignment-content-type-library.json#/definitions/alignment",
                     "title": "Text"
                 },
                 "text-items": {
@@ -71,7 +71,7 @@
             "additionalProperties": false,
             "properties": {
                 "block-position": {
-                    "$ref": "#/definitions/positioning-top-left",
+                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/positioning-content-type-library.json#/definitions/positioning-top-left",
                     "title": "Text"
                 },
                 "text-items": {
@@ -88,14 +88,14 @@
             "additionalProperties": false,
             "properties": {
                 "block-alignment": {
-                    "$ref": "#/definitions/alignment",
+                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/alignment-content-type-library.json#/definitions/alignment",
                     "title": "Text"
                 },
                 "text-items": {
                     "type": "array",
                     "title": "Text",
                     "items": {
-                        "$ref": "#/definitions/flexy-styled-text"
+                        "$ref": "#/definitions/css-class-styled-text"
                     }
                 }
             }
@@ -105,14 +105,14 @@
             "additionalProperties": false,
             "properties": {
                 "block-position": {
-                    "$ref": "#/definitions/positioning-top-left",
+                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/positioning-content-type-library.json#/definitions/positioning-top-left",
                     "title": "Text"
                 },
                 "text-items": {
                     "type": "array",
                     "title": "Text",
                     "items": {
-                        "$ref": "#/definitions/flexy-styled-text"
+                        "$ref": "#/definitions/css-class-styled-text"
                     }
                 }                
             }

@@ -1,6 +1,6 @@
 ﻿{
     "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content%20types/image-banner-1.json",
+    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/banners/image-banner-1.json",
     "type": "object",
     "title": "Image Banner 1",
     "description": "Image banner with ability to add 5 styled text blocks that can be positioned using percentage offsets (top:50%,left:50%)",
@@ -25,11 +25,11 @@
             "description": "positioned styled text blocks",
             "maxItems": 5,
             "items": {
-                "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content%20types/core-type-library.json#/definitions/positioned-styled-text-block"
+                "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/text-content-type-library.json#/definitions/positioned-styled-text-block"
             }
         },
         "callToAction": {
-            "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content%20types//core-type-library.json#/definitions/relative-link"
+            "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/links-content-type-library.json#/definitions/relative-link"
         }
     },
     "allOf": [
