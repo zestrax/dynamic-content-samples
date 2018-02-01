@@ -1,8 +1,8 @@
 ﻿{
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
     "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/banners/video-banner-1.json",
-    "title": "Video Banner",
-  "description": "banner displaying video title and a call to action",
+    "title": "Video Banner 1",
+  "description": "banner displaying video title, styled text block and a call to action",
 
   "allOf": [
     { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content" }
@@ -33,5 +33,5 @@
     }
 },
 
-  "propertyOrder": ["video", "title", "text", "callToAction"]
+  "propertyOrder": ["video", "title","textBlocks","callToAction"]
 }

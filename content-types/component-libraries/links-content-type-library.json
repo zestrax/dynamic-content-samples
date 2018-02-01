@@ -19,7 +19,7 @@
                     "type": "string",
                     "title": "Url",
                     "description": "(__/__/__.___) a relative url to link",
-                    "pattern": "^([a-z]:)*(\/*(.*[a-z0-9]+\/)*(.*[a-z0-9]+))"
+                    "pattern": "(http://|/)[^ :]+"
                 }
             },
             "propertyOrder": [

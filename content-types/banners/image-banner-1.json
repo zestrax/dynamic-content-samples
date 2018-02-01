@@ -14,11 +14,6 @@
             "description": "Alt text for screen readers and improved SEO",
             "format": "text"
         },
-        "lazyload": {
-            "type": "boolean",
-            "title": "Lazy load flag",
-            "description": "Loads image when needed - may cause a delay in displaying banner background"
-        },
         "textBlocks": {
             "type": "array",
             "title": "Styled text blocks",
