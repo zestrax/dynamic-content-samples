@@ -1,4 +1,4 @@
-﻿{
+{
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
     "title": "Core type schema",
@@ -39,7 +39,7 @@
                     "format": "text"
                 },
                 "alignment": {
-                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/alignment-content-type-library.json#/definitions/h-align",             
+                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/alignment-content-type-library.json#/definitions/h-align"            
                 }
             },
             "propertyOrder": [
@@ -53,7 +53,7 @@
             "title": "TEXT BLOCK",
             "properties": {
                 "block-alignment": {
-                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/alignment-content-type-library.json#/definitions/alignment",
+                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/alignment-content-type-library.json#/definitions/alignment"
                 },
                 "classes": {
                     "type": "string",
@@ -79,7 +79,7 @@
             "title": "TEXT BLOCK",
             "properties": {
                 "block-position": {
-                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/positioning-content-type-library.json#/definitions/positioning-top-left",
+                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/positioning-content-type-library.json#/definitions/positioning-top-left"
                 },
                 "classes": {
                     "type": "string",

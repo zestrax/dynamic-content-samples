@@ -9,7 +9,6 @@
             "type": "object",
             "title": "POSITION",
             "description": "position fields using % offset from top and left ",
-            "additionalProperties": false,
             "properties": {
                 "top": {
                     "type": "number",
@@ -21,7 +20,5 @@
                 }
             }
         }
-        
-
     }
 }
