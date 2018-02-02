@@ -7,12 +7,12 @@
     "definitions": {
         "aligned-text": {
             "type": "object",
-            "additionalProperties": false,
+            "title": "LINE OF TEXT",
             "properties": {
                 "text": {
                     "type": "string",
-                    "title": " Text",
-                    "description": "Line of text",
+                    "title": " Line of text",
+                    "description": "Text to be displayed.",
                     "format": "text"
                 },
                 "alignment": {
@@ -22,25 +22,24 @@
         },
         "css-class-styled-text": {
             "type": "object",
-            "title": "Styled Text",
+            "title": "LINE OF TEXT",
             "description": "Text line that can be styled using classes and CSS",
             "additionalProperties": false,
             "properties": {
                 "text": {
                     "type": "string",
-                    "title": "line of text",
-                    "description": "Actual text",
+                    "title": "Line of text",
+                    "description": "Text to be displayed",
                     "format": "text"
                 },
                 "classes": {
                     "type": "string",
-                    "title": "CSS Classes",
-                    "description": "Add CSS classes with a space between each such as: crate-helvetica-light  headline-medium",
+                    "title": "Text styling options",
+                    "description": "Add CSS classes with a space between each such as: headline-medium",
                     "format": "text"
                 },
                 "alignment": {
-                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/alignment-content-type-library.json#/definitions/h-align",
-                    "title": "Align text"
+                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/alignment-content-type-library.json#/definitions/h-align",             
                 }
             },
             "propertyOrder": [
@@ -51,71 +50,110 @@
         },
         "aligned-text-block": {
             "type": "object",
-            "additionalProperties": false,
+            "title": "TEXT BLOCK",
             "properties": {
                 "block-alignment": {
                     "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/alignment-content-type-library.json#/definitions/alignment",
-                    "title": "Text"
+                },
+                "classes": {
+                    "type": "string",
+                    "title": "Block styling options",
+                    "description": "Add CSS classes with a space between each such as: white-transparent-box",
+                    "format": "text"
                 },
                 "text-items": {
                     "type": "array",
-                    "title": "Text",
                     "items": {
                         "$ref": "#/definitions/aligned-text"
                     }
                 }
-            }
+            },
+            "propertyOrder": [
+                "block-alignment",
+                "classes",
+                "text-items"
+            ]
         },
         "positioned-text-block": {
             "type": "object",
-            "additionalProperties": false,
+            "title": "TEXT BLOCK",
             "properties": {
                 "block-position": {
                     "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/positioning-content-type-library.json#/definitions/positioning-top-left",
-                    "title": "Text"
+                },
+                "classes": {
+                    "type": "string",
+                    "title": "Block styling options",
+                    "description": "Add CSS classes with a space between each such as: white-transparent-box",
+                    "format": "text"
                 },
                 "text-items": {
                     "type": "array",
-                    "title": "Text",
                     "items": {
                         "$ref": "#/definitions/aligned-text"
                     }
                 }
-            }
+            },
+            "propertyOrder": [
+                "block-position",
+                "classes",
+                "text-items"
+            ]
         },
         "aligned-styled-text-block": {
             "type": "object",
             "additionalProperties": false,
+            "title": "TEXT BLOCK",
             "properties": {
                 "block-alignment": {
-                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/alignment-content-type-library.json#/definitions/alignment",
-                    "title": "Text"
+                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/alignment-content-type-library.json#/definitions/alignment"
+                },
+                "classes": {
+                    "type": "string",
+                    "title": "Block styling options",
+                    "description": "Add CSS classes with a space between each such as: white-transparent-box",
+                    "format": "text"
                 },
                 "text-items": {
                     "type": "array",
-                    "title": "Text",
                     "items": {
                         "$ref": "#/definitions/css-class-styled-text"
                     }
                 }
-            }
+            },
+            "propertyOrder": [
+                "block-alignment",
+                "classes",
+                "text-items"
+            ]
         },
         "positioned-styled-text-block": {
             "type": "object",
+            "title": "TEXT BLOCK",
             "additionalProperties": false,
             "properties": {
                 "block-position": {
                     "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/positioning-content-type-library.json#/definitions/positioning-top-left",
                     "title": "Text"
                 },
+                "classes": {
+                    "type": "string",
+                    "title": "Block styling options",
+                    "description": "Add CSS classes with a space between each such as: white-transparent-box",
+                    "format": "text"
+                },
                 "text-items": {
                     "type": "array",
-                    "title": "Text",
                     "items": {
                         "$ref": "#/definitions/css-class-styled-text"
                     }
-                }                
-            }
+                }
+            },
+            "propertyOrder": [
+                "block-position",
+                "classes",
+                "text-items"
+            ]
         }
     }
 }

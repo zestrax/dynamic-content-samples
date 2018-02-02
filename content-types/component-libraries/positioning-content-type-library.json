@@ -7,7 +7,7 @@
     "definitions": {
         "positioning-top-left": {
             "type": "object",
-            "title": "position",
+            "title": "POSITION",
             "description": "position fields using % offset from top and left ",
             "additionalProperties": false,
             "properties": {
