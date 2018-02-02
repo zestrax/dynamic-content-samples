@@ -1,4 +1,4 @@
-{
+﻿{
 	 "$schema": "http://json-schema.org/draft-04/schema#",
 	 "type": "object",
 	 "title": "Core type schema",
@@ -151,8 +151,11 @@
 					 "items": {
 						 "$ref": "#/definitions/css-class-styled-text"
 					}
-				}
-			},
+				},
+                "callToAction": {
+                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/links-content-type-library.json#/definitions/relative-link"
+                }
+            },
 			 "propertyOrder": [
 				"block-position",
 				"classes",
