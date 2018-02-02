@@ -1,0 +1,58 @@
+.fullWidthDiv{
+    width:100%;
+
+}
+p {
+    margin:0;padding:0;
+    text-decoration: none;
+}
+.fullWidthImg{
+    width:100%
+}
+.main-banner-text{
+    font-family: Helvetica;
+    font-size: 36px;
+}
+.secondary-banner-text{
+    font-family: Helvetica;
+    font-size: 24px;
+}
+.white-transparent-block{
+     background-color: rgba(255,255,255,0.5);
+     padding:20px
+ }
+.black-transparent-block{
+    background-color: rgba(0,0,0,0.6);
+    padding:20px
+}
+.grey-transparent-block{
+    background-color: rgba(100,100,100,0.5);
+    padding:20px
+}
+.white-block{
+    background-color: rgba(255,255,255,1);
+    padding:20px
+}
+.black-block{
+    background-color: rgba(0,0,0,1);
+    padding:20px
+}
+.grey-block{
+    background-color: rgba(100,100,100,1);
+    padding:20px
+}
+.white-text{
+    color:#ffffff;
+}
+.black-text{
+    color: #000000;
+}
+.red-text{
+    color: #ff0000
+}
+.grey-text{
+    color: #444444
+}
+.text-block a{
+    line-height: 30px;
+}
