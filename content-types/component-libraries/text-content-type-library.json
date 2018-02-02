@@ -147,6 +147,7 @@
 				},
 				 "text-items": {
 					 "type": "array",
+					 "title":"TEXT",
 					 "items": {
 						 "$ref": "#/definitions/css-class-styled-text"
 					}
