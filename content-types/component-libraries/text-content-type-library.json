@@ -102,34 +102,34 @@
 				"text-items"
 			]
 		},
-		 "aligned-styled-text-block": {
-			 "type": "object",
-			 "additionalProperties": false,
-			 "title": "TEXT BLOCK",
-			 "properties": {
-				 "block-alignment": {
-					 "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/alignment-content-type-library.json#/definitions/alignment"
-				},
-				 "classes": {
-					 "type": "string",
-					 "title": "Block styling options",
-					 "description": "Add CSS classes with a space between each such as: white-transparent-box",
-					 "format": "text"
-				},
-				 "text-items": {
-					 "type": "array",
-					 "title": "TEXT LINE",
-					 "items": {
-						 "$ref": "#/definitions/css-class-styled-text"
-					}
-				}
-			},
-			 "propertyOrder": [
-				"block-alignment",
-				"classes",
-				"text-items"
-			]
-		},
+        "aligned-styled-text-block": {
+            "type": "object",
+            "additionalProperties": false,
+            "title": "TEXT BLOCK",
+            "properties": {
+                "block-alignment": {
+                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/alignment-content-type-library.json#/definitions/alignment"
+                },
+                "classes": {
+                    "type": "string",
+                    "title": "Block styling options",
+                    "description": "Add CSS classes with a space between each such as: white-transparent-box",
+                    "format": "text"
+                },
+                "text-items": {
+                    "type": "array",
+                    "title": "TEXT LINE",
+                    "items": {
+                        "$ref": "#/definitions/css-class-styled-text"
+                    }
+                }
+            },
+            "propertyOrder": [
+                "block-alignment",
+                "classes",
+                "text-items"
+            ]
+        },
 		 "positioned-styled-text-block": {
 			 "type": "object",
 			 "title": "TEXT BLOCK",

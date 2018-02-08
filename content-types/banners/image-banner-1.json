@@ -8,12 +8,6 @@
         "image": {
             "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
         },
-        "altText": {
-            "type": "string",
-            "title": "Main Image Alt Text",
-            "description": "Alt text for screen readers and improved SEO",
-            "format": "text"
-        },
         "textBlocks": {
             "type": "array",
             "title": "Styled text blocks",
@@ -34,9 +28,6 @@
     ],
     "propertyOrder": [
         "image",
-        "altText",
-        "lazyload",
-        "inset",
         "textBlocks",
         "callToAction"
     ]
