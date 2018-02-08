@@ -98,13 +98,8 @@
             },
             "propertyOrder": [
                 "block-position",
-                "classes",
-                "text-items"
-            ]
-        },
-        "propertyOrder": [
-                "block-position",
-                "classes",
+                "block-color",
+                "text-color",
                 "text-items"
             ]
         },
