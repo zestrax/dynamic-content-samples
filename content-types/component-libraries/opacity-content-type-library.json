@@ -25,8 +25,9 @@
             "title": "Transparency",
             "description":"enter percentage transparency as a number e.g. 0 5 23 100. 0 is solid colour 100 is completely transparent",
             "type": "integer",
-            "maximum":"100",
-            "munimum": "0"
+            "minimum":0,
+            "maximum":100
+            
         }
     }
 }
