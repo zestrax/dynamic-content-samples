@@ -61,7 +61,7 @@
                     "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/color-content-type-library.json#/definitions/web-color"
                 },
                 "block-transparency": {
-                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/opacitiy-content-type-library.json#/definitions/opacity-list"
+                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/opacity-content-type-library.json#/definitions/opacity-list"
                 },
                 "text-items": {
                     "type": "array",
