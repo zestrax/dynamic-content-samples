@@ -27,23 +27,33 @@
                 "block-alignment": {
                     "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/alignment-content-type-library.json#/definitions/alignment"
                 },
-                "classes": {
-                    "type": "string",
-                    "title": "Block styling options",
-                    "description": "Add CSS classes with a space between each such as: white-transparent-box",
-                    "format": "text"
+                "block-color": {
+                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/color-content-type-library.json#/definitions/web-color"
+                },
+                "text-color": {
+                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/color-content-type-library.json#/definitions/web-color"
+                },
+                "block-transparency": {
+                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/opacity-content-type-library.json#/definitions/opacity-list"
                 },
                 "text-items": {
                     "type": "array",
                     "title": "TEXT LINE",
+                    "maxItems": 5,
+                    "minItems": 1,
                     "items": {
                         "$ref": "#/definitions/aligned-text"
                     }
                 }
             },
+            "required": [
+                "block-transparency"
+            ],
             "propertyOrder": [
-                "block-alignment",
-                "classes",
+                "block-position",
+                "block-transparency",
+                "block-color",
+                "text-color",
                 "text-items"
             ]
         },
@@ -66,11 +76,16 @@
                 "text-items": {
                     "type": "array",
                     "title": "TEXT LINE",
+                    "maxItems": 5,
+                    "minItems": 1,
                     "items": {
                         "$ref": "#/definitions/aligned-text"
                     }
                 }
             },
+            "required": [
+                "block-transparency"
+            ],
             "propertyOrder": [
                 "block-position",
                 "block-transparency",
