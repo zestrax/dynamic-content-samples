@@ -9,6 +9,7 @@
         "web-color": {
             "title": "Colors",
             "enum": [
+                "black",
                 "White",
                 "Silver",
                 "Gray",
