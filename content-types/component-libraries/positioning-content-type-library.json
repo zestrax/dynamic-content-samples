@@ -1,9 +1,9 @@
-﻿{
+{
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
     "title": "Core type schema",
     "description":"core content type components to build content types",
-    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/positioning-content-type-library.json",
+    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/master/content-types/component-libraries/positioning-content-type-library.json",
     "definitions": {
         "positioning-top-left": {
             "type": "object",

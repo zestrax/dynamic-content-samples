@@ -1,9 +1,9 @@
-﻿{
+{
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
     "title": "Core type schema for links",
     "description":"Core content type components to build content types",
-    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/links-content-type-library.json",
+    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/master/content-types/component-libraries/links-content-type-library.json",
     "definitions": {
         "relative-link": {
             "type": "object",

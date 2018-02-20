@@ -1,6 +1,6 @@
-﻿{
+{
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/opacity-content-type-library.json",
+    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/master/content-types/component-libraries/opacity-content-type-library.json",
     "type": "object",
     "title": "Core type schema",
     "description": "core content type components to build content types",
