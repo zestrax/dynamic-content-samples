@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/master/content-types/banners/video-banner-1.json",
+    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/banners/video-banner-1.json",
     "title": "Video Banner 1",
   "description": "banner displaying video title, styled text block and a call to action",
 
@@ -25,11 +25,11 @@
         "description": "positioned styled text blocks",
         "maxItems": 5,
         "items": {
-            "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/master/content-types/component-libraries/text-content-type-library.json#/definitions/positioned-styled-text-block"
+            "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/text-content-type-library.json#/definitions/positioned-styled-text-block"
         }
     },
     "callToAction": {
-        "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/master/content-types/component-libraries/links-content-type-library.json#/definitions/relative-link"
+        "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/links-content-type-library.json#/definitions/relative-link"
     }
 },
 

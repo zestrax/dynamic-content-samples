@@ -1,6 +1,6 @@
 {
     "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/master/content-types/banners/image-banner-2.json",
+    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/banners/image-banner-2.json",
     "type": "object",
     "title": "Image Banner 1",
     "description": "Image banner with ability to add 5 text blocks that can be positioned using percentage offsets (top:50%,left:50%), the text colour is defined at block level, block cackground color can also be defined as wel as opacity",
