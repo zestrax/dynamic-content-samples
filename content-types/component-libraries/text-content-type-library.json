@@ -44,6 +44,9 @@
                     "items": {
                         "$ref": "#/definitions/aligned-text"
                     }
+                },
+                "callToAction": {
+                    "$ref": "./links-content-type-library.json#/definitions/relative-link"
                 }
             },
             "required": [
@@ -81,6 +84,9 @@
                     "items": {
                         "$ref": "#/definitions/aligned-text"
                     }
+                },
+                "callToAction": {
+                    "$ref": "./links-content-type-library.json#/definitions/relative-link"
                 }
             },
             "required": [
