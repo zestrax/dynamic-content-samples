@@ -20,11 +20,7 @@
             "description": "positioned text blocks",
             "maxItems": 5,
             "items": {
-
-                "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/text-content-type-library.json#/definitions/positioned-text-block",
-
                 "$ref": "../component-libraries/text-content-type-library.json#/definitions/positioned-text-block"
-
             }
         },
         "callToAction": {
