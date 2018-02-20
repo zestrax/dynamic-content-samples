@@ -1,10 +1,6 @@
 ﻿{
     "$schema": "http://json-schema.org/draft-04/schema#",
-<<<<<<< HEAD
-    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/text-content-type-library.json",
-=======
     "id": "text-content-type-library.json",
->>>>>>> master
     "type": "object",
     "title": "Core type schema",
     "description": "core content type components to build content types",
@@ -20,11 +16,7 @@
                     "format": "text"
                 },
                 "alignment": {
-<<<<<<< HEAD
-                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/alignment-content-type-library.json#/definitions/h-align"
-=======
                     "$ref": "./alignment-content-type-library.json#/definitions/h-align"
->>>>>>> master
                 }
             }
         },
@@ -36,15 +28,6 @@
                     "$ref": "./alignment-content-type-library.json#/definitions/alignment"
                 },
                 "block-color": {
-<<<<<<< HEAD
-                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/color-content-type-library.json#/definitions/web-color"
-                },
-                "text-color": {
-                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/color-content-type-library.json#/definitions/web-color"
-                },
-                "block-transparency": {
-                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/opacity-content-type-library.json#/definitions/opacity-list"
-=======
                     "$ref": "./color-content-type-library.json#/definitions/web-color"
                 },
                 "text-color": {
@@ -52,7 +35,6 @@
                 },
                 "block-transparency": {
                     "$ref": "./opacity-content-type-library.json#/definitions/opacity-list"
->>>>>>> master
                 },
                 "text-items": {
                     "type": "array",
@@ -80,18 +62,6 @@
             "title": "TEXT BLOCK",
             "properties": {
                 "block-position": {
-<<<<<<< HEAD
-                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/positioning-content-type-library.json#/definitions/positioning-top-left"
-                },
-                "block-color": {
-                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/color-content-type-library.json#/definitions/web-color"
-                },
-                "text-color": {
-                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/color-content-type-library.json#/definitions/web-color"
-                },
-                "block-transparency": {
-                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/opacity-content-type-library.json#/definitions/opacity-list"
-=======
                     "$ref": "./positioning-content-type-library.json#/definitions/positioning-top-left"
                 },
                 "block-color": {
@@ -102,7 +72,6 @@
                 },
                 "block-transparency": {
                     "$ref": "./opacity-content-type-library.json#/definitions/opacity-list"
->>>>>>> master
                 },
                 "text-items": {
                     "type": "array",
