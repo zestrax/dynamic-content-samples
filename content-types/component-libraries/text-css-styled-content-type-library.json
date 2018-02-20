@@ -24,7 +24,7 @@
                     "format": "text"
                 },
                 "alignment": {
-                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/alignment-content-type-library.json#/definitions/h-align"
+                    "$ref": "./alignment-content-type-library.json#/definitions/h-align"
                 }
             },
             "propertyOrder": [
@@ -39,7 +39,7 @@
             "additionalProperties": false,
             "properties": {
                 "block-position": {
-                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/positioning-content-type-library.json#/definitions/positioning-top-left",
+                    "$ref": "./positioning-content-type-library.json#/definitions/positioning-top-left",
                     "title": "Text"
                 },
                 "classes": {
@@ -56,7 +56,7 @@
                     }
                 },
                 "callToAction": {
-                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/links-content-type-library.json#/definitions/relative-link"
+                    "$ref": "./links-content-type-library.json#/definitions/relative-link"
                 }
             },
             "propertyOrder": [
@@ -71,7 +71,7 @@
             "additionalProperties": false,
             "properties": {
                 "block-alignment": {
-                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/alignment-content-type-library.json#/definitions/alignment"
+                    "$ref": "./alignment-content-type-library.json#/definitions/alignment"
                 },
                 "classes": {
                     "type": "string",

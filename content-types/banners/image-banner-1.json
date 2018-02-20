@@ -14,11 +14,11 @@
             "description": "positioned styled text blocks",
             "maxItems": 5,
             "items": {
-                "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/text-css-styled-content-type-library.json#/definitions/positioned-styled-text-block"
+                "$ref": "../component-libraries/text-css-styled-content-type-library.json#/definitions/positioned-styled-text-block"
             }
         },
         "callToAction": {
-            "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/links-content-type-library.json#/definitions/relative-link"
+            "$ref": "../component-libraries/links-content-type-library.json#/definitions/relative-link"
         }
     },
     "allOf": [
