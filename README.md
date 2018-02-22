@@ -45,7 +45,9 @@ Once you have your reusable content type components organised into libraries you
 Referencing component libriries has the effect of nesting the Content Type component in the UI
 ![Link content type Amplience UI snippet](http://i1.adis.ws/i/jwdemo/link-content-type-UI-snip)
 
-# Type libraries
+# Type Libraries
+Sample type libraries for representing common components for building more complex content types
+
 *alignment-content-type-library.json* 
 
 - v-align - selecting left, right and center   
