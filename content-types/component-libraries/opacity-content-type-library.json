@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/opacity-content-type-library.json",
     "type": "object",
@@ -6,7 +6,7 @@
     "description": "core content type components to build content types",
     "additionalProperties": false,
     "definitions": {
-        "opacity-list": {
+        "transparency-list": {
             "title": "Transparency",
             "enum": [
                 "10",
@@ -21,13 +21,19 @@
                 "100"
             ]
         },
-        "opacity-value": {
+        "transparency-value": {
             "title": "Transparency",
-            "description":"enter percentage transparency as a number e.g. 0 5 23 100. 0 is solid colour 100 is completely transparent",
+            "description": "enter percentage transparency as a number e.g. 0 5 23 100. 0 is solid colour 100 is completely transparent",
             "type": "integer",
-            "minimum":0,
-            "maximum":100
-            
+            "minimum": 0,
+            "maximum": 100
+        },
+        "opacity-value": {
+            "title": "Opacity",
+            "description": "enter opacity value 0 to 1",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
         }
     }
 }
