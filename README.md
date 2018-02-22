@@ -83,4 +83,13 @@ Referencing component libriries has the effect of nesting the Content Type compo
 
 - css-class-styled-text - fields for text entry and setting CSS classes
 - aligned-styled-text-block - array of css-class-styled-text components, and the ability to set position using alignment component (e.g. left middle) and block CSS classes
-- positioned-styled-text-block - array of css-class-styled-text components, and the ability to set position using  positioning-top-left component (e.g. 10,10),and block CSS classes
+- positioned-styled-text-block - array of css-class-styled-text components, and the ability to set position using  positioning-top-left component (e.g. 10,10),and block CSS classes#
+
+# Complex Content Types
+
+- image-banner-1 - set background image, array of upto 5 positioned-styled-text-block text block content type components and call to action link
+- image-banner-2 - set background image, array of upto 5 positioned-text-block text block content type components and call to action link
+
+
+# Handlebars Partials
+
