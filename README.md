@@ -1,7 +1,7 @@
 # Amplience Dynamic Content
 Amplience Dynamic Content is a headless CMS specifically designed to support online retailers deliver content to all of their digital channels.  Content is delivered through a web service as JSON and the shape of the JSON is defined using a Content Type which is basically a Schema which follows the [JSON Schema.org standard](http://json-schema.org/).  Content in Amplience can be modularised into smaller componments which themselves are content types defined using schemas.  This method allows you to model very sophisicated content types from reusable components.  As Amplience Content types fully adhere to JSON schema it is possible to use schema development tools such as Liquid XML Studio and XMLspy.
 
-# Cotent Type Libraries
+# Content Type Libraries
 
 Content types that are used as reusable components can be organized into Type Libraries which are JSON Schema documents where the component schemas are held within a definitions section.
 
