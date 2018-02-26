@@ -9,9 +9,9 @@
             "type": "array",
             "maxItems": 5,
             "minItems": 1,
-            "items":[ 
+            "items": [
                 {
-                    "$ref": "../component-libraries/slot-type-library.json/#/definitions/segmented-banner"
+                    "$ref": "../component-libraries/slot-type-library.json#/definitions/segmented-banner"
                 }
             ]
         }
