@@ -1,0 +1,44 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/slot-type-library.json",
+    "type": "object",
+    "title": "Slot type schemas",
+    "description": "slot type components to build slots",
+    "additionalProperties": false,
+    "definitions": {
+        "banners": {
+            "type": "object",
+            "title": "CONTENT",
+            "description": "",
+            "allOf": [
+                {
+                    "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                },
+                {
+                    "properties": {
+                        "contentType": {
+                            "title": "",
+                            "enum": [
+                                "../image-banner-1.json",
+                                "../image-banner-2.json"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "segmented-banner": {
+            "type": "object",
+            "title": "CONTENT",
+            "description": "",
+            "properties": {
+                "segment": {
+                    "$ref": "../component-libraries/segment-content-type-library.json#/definitions/customer-segment"
+                },
+                "content": {
+                    "$ref": "./#/definitions/banners"
+                }
+            }
+        }
+    }
+}

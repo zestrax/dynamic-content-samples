@@ -1,36 +1,24 @@
 ﻿{
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/slot/segmented-slot.json",
+    "type": "object",
     "title": "Segmented Slot",
     "description": "Slot excepts contentand a targeted segment",
-    "allOf": [
-        {"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"}
-    ],
-    "type": "object",
     "properties": {
-        "segment":{
-            "$ref": "../component-libraries/segment-content-type-library.json#/definitions/customer-segment"
-        },
-        "content": {
-            "type": "object",
-            "title": "CONTENT",
-            "description": "",
-            "allOf": [
+        "content-list": {
+            "type": "array",
+            "maxItems": 5,
+            "minItems": 1,
+            "items":[ 
                 {
-                    "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
-                },
-                {
-                    "properties": {
-                        "contentType": {
-                            "title": "",
-                            "enum": [
-                                "../image-banner-1.json",
-                                "../image-banner-2.json"                             
-                            ]
-                        }
-                    }
+                    "$ref": "../component-libraries/slot-type-library.json/#/definitions/segmented-banner"
                 }
             ]
         }
-    }
+    },
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ]
 }
