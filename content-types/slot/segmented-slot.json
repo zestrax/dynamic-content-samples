@@ -8,6 +8,9 @@
     ],
     "type": "object",
     "properties": {
+        "segment":{
+            "$ref": "../component-libraries/segment-content-type-library.json#/definitions/customer-segment"
+        },
         "content": {
             "type": "object",
             "title": "CONTENT",
@@ -21,8 +24,8 @@
                         "contentType": {
                             "title": "",
                             "enum": [
-                                "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/banners/image-banner-1.json",
-                                "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/banners/image-banner-2.json"                             
+                                "../image-banner-1.json",
+                                "../image-banner-2.json"                             
                             ]
                         }
                     }
