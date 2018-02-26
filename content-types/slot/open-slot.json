@@ -1,0 +1,18 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/slots/open-slot",
+    "title": "Open Slot",
+    "description": "Slot excepts any type",
+    "allOf": [
+        {"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"}
+    ],
+    "type": "object",
+    "properties": {
+        "content": {
+            "type": "object",
+            "title": "CONTENT",
+            "description": "",
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"    
+        }
+    }
+}
