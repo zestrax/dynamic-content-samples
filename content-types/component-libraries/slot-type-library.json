@@ -4,7 +4,6 @@
     "type": "object",
     "title": "Slot type schemas",
     "description": "slot type components to build slots",
-    "additionalProperties": false,
     "definitions": {
         "banners": {
             "type": "object",
@@ -33,7 +32,7 @@
             "description": "",
             "properties": {
                 "segment": {
-                    "$ref": "../component-libraries/segment-content-type-library.json#/definitions/customer-segment"
+                    "$ref": "../component-libraries/segment-content-type-library.json/#/definitions/customer-segment"
                 },
                 "content": {
                     "$ref": "./#/definitions/banners"
