@@ -1,8 +1,8 @@
 ﻿{
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/slot/open-slot.json",
-    "title": "Open Slot",
-    "description": "Slot excepts any type",
+    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/slot/segmented-slot.json",
+    "title": "Segmented Slot",
+    "description": "Slot excepts contentand a targeted segment",
     "allOf": [
         {"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"}
     ],
