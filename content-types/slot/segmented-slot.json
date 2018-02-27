@@ -10,11 +10,11 @@
             "title": "Segmented content list",
             "description": "add list content and their associated segements",
             "maxItems": 5,
-            "items": [
+            "items": 
                 {
                     "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/slot-type-library.json#/definitions/segmented-banner"
                 }
-            ]
+            
         }
     },
     "allOf": [
