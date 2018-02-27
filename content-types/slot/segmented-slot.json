@@ -7,11 +7,12 @@
     "properties": {
         "content-list": {
             "type": "array",
+            "title": "Segmented content list",
+            "description": "add list content and their associated segements",
             "maxItems": 5,
-            "minItems": 1,
             "items": [
                 {
-                    "$ref": "../component-libraries/slot-type-library.json#/definitions/segmented-banner"
+                    "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/slot-type-library.json#/definitions/segmented-banner"
                 }
             ]
         }
