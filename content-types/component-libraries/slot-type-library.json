@@ -9,22 +9,26 @@
             "type": "object",
             "title": "CONTENT",
             "description": "",
-            "allOf": [
-                {
-                    "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
-                },
-                {
-                    "properties": {
-                        "contentType": {
-                            "title": "",
-                            "enum": [
-                                "../image-banner-1.json",
-                                "../image-banner-2.json"
-                            ]
+            "properties": {
+                "content-type": {
+                    "allOf": [
+                        {
+                            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                        },
+                        {
+                            "properties": {
+                                "contentType": {
+                                    "title": "",
+                                    "enum": [
+                                        "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/banners/image-banner-1.json",
+                                        "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/banners/image-banner-2.json"
+                                    ]
+                                }
+                            }
                         }
-                    }
+                    ]
                 }
-            ]
+            }
         },
         "segmented-banner": {
             "type": "object",
@@ -32,7 +36,7 @@
             "description": "",
             "properties": {
                 "segment": {
-                    "$ref": "../component-libraries/segment-content-type-library.json/#/definitions/customer-segment"
+                    "$ref": "../component-libraries/segment-content-type-library.json#/definitions/customer-segment"
                 },
                 "content": {
                     "$ref": "./#/definitions/banners"
