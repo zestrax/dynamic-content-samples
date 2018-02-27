@@ -1,6 +1,6 @@
 ﻿{
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/slot-type-library.json",
+    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/slot-type-library.json",
     "type": "object",
     "title": "Slot type schemas",
     "description": "slot type components to build slots",
@@ -39,7 +39,7 @@
                     "$ref": "../component-libraries/segment-content-type-library.json#/definitions/customer-segment"
                 },
                 "content": {
-                    "$ref": "./#/definitions/banners"
+                    "$ref": "#/definitions/banners"
                 }
             }
         }
