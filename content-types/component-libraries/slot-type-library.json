@@ -34,7 +34,7 @@
         },
         "segmented-banner": {
             "type": "object",
-            "title": "CONTENT",
+            "title": "SEGMENTED CONTENT",
             "description": "",
             "properties": {
                 "segment": {
