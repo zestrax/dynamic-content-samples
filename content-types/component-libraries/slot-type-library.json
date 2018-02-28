@@ -21,7 +21,9 @@
                                     "title": "",
                                     "enum": [
                                         "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/banners/image-banner-1.json",
-                                        "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/banners/image-banner-2.json"
+                                        "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/banners/image-banner-2.json",
+                                        "https://raw.githubusercontent.com/techiedarren/dc-examples/master/content-types/blocks/hero-block.json",
+                                        "https://raw.githubusercontent.com/techiedarren/dc-examples/master/content-types/blocks/image-block.json"           
                                     ]
                                 }
                             }
