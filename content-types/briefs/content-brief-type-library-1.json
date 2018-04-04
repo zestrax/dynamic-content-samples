@@ -7,7 +7,7 @@
     "description": "core content type definitions to for brief specific content types",
     "definitions": {     
        "content-brief-type": {
-            "title": "type of brief",
+            "title": "Type of content brief",
             "enum": [
                 "SL",
                 "PHT",
@@ -27,9 +27,9 @@
                "type": {
                     "$ref": "#/definitions/content-brief-type"
                 },
-                "description": {
+                "copy": {
                     "type": "string",
-                    "title": " Line of text",
+                    "title": "Copy ",
                     "description": "Text to be displayed.",
                     "format": "text"
                 },
@@ -51,16 +51,14 @@
                     "items": {
                         "$ref": "../component-libraries/image-content-type-library.json#/definitions/descriptive-image"
                     }
-                }, 
-                "documents": {
-                    "type": "array",
-                    "title": "IMAGES",
-                    "maxItems": 5,
-                    "items": {
-                        "$ref": "../component-libraries/links-content-type-library.json#/definitions/descriptive-link"
-                    }
                 }
-            }
+            },
+            "propertyOrder": [
+                "type",
+                "copy",
+                "notes",
+                "images"
+            ]
         }
     }
 }

@@ -12,12 +12,12 @@
             "properties": {
                 "reference": {
                     "type": "string",
-                    "title": "brief reference name",
+                    "title": "Edition brief reference name",
                     "format": "text"
                 },
                 "designer": {
                     "type": "string",
-                    "title": "designer",
+                    "title": "Designer",
                     "format": "text"
                 },
                 "content-briefs": {
@@ -36,15 +36,22 @@
                         "$ref": "../component-libraries/image-content-type-library.json#/definitions/descriptive-image"
                     }
                 },
-                "page links": {
+                "page-links": {
                     "type": "array",
-                    "title": "IMAGES",
+                    "title": "PAGE LINKS",
                     "maxItems": 5,
                     "items": {
                         "$ref": "../component-libraries/links-content-type-library.json#/definitions/descriptive-link"
                     }
                 }
-            }
+            },
+            "propertyOrder": [
+                "reference",
+                "designer",
+                "content-briefs",
+                "images",
+                "page-links"
+            ]
         }
     }
 }
