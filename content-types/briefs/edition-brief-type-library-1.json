@@ -20,12 +20,12 @@
                     "title": "designer",
                     "format": "text"
                 },
-                "content briefs": {
+                "content-briefs": {
                     "type": "array",
                     "title": "CONTENT BRIEFS",
                     "maxItems": 20,
                     "items": {
-                        "$ref": "./content-brief-library.json#/definitions/content-brief"
+                        "$ref": "./content-brief-library-1.json#/definitions/content-brief"
                     }
                 },
                 "images": {
