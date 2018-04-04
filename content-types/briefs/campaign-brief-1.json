@@ -5,13 +5,18 @@
     "title": "Campaign Brief 1",
     "description": "campaign brief",
     "properties": {
+        "reference": {
+            "type": "string",
+            "title": "brief reference name",
+            "format": "text"
+        },
         "edition briefs": {
             "type": "array",
             "title": "edition brief",
             "description": "the brief for specific editions",
             "maxItems": 5,
             "items": {
-                "$ref": "./edition-briefs-type-library-1.json#/definitions/edition-brief"
+                "$ref": "./edition-brief-type-library-1.json#/definitions/edition-brief"
             }
         }
     },

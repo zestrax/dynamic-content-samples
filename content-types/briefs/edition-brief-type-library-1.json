@@ -1,46 +1,30 @@
 ﻿{
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/briefs/content-brief-type-library-1.json",
+    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/briefs/edition-brief-type-library-1.json",
     "type": "object",
     "title": "Core type schema",
     "description": "core content type definitions to for brief specific content types",
     "definitions": {     
-       "content-brief-type": {
-            "title": "type of brief",
-            "enum": [
-                "SL",
-                "PHT",
-                "Marquee",
-                "Hero",
-                "Bottom banner 1",
-                "Bottom banner 2",
-                "Bottom banner 3",
-                "Bottom banner 4",
-                "Caveat"
-            ]
-        },
-        "content-brief": {
+        "edition-brief": {
             "type": "object",
-            "title": "CONTENT LEVEL BRIEF",
+            "title": "EDITION LEVEL BRIEF",
             "properties": {
-               "type": {
-                    "$ref": "#/definitions/content-brief-type"
-                },
-                "description": {
+                "reference": {
                     "type": "string",
-                    "title": " Line of text",
-                    "description": "Text to be displayed.",
+                    "title": "brief reference name",
                     "format": "text"
                 },
-                "notes": {
+                "designer": {
+                    "type": "string",
+                    "title": "designer",
+                    "format": "text"
+                },
+                "content briefs": {
                     "type": "array",
-                    "title": "NOTES",
-                    "maxItems": 5,
-                    "minItems": 1,
+                    "title": "CONTENT BRIEFS",
+                    "maxItems": 20,
                     "items": {
-                        "type": "string",
-                        "title": "Note",
-                        "format": "text"
+                        "$ref": "../component-libraries/image-content-type-library.json#/definitions/descriptive-image"
                     }
                 },
                 "images": {
@@ -51,7 +35,7 @@
                         "$ref": "../component-libraries/image-content-type-library.json#/definitions/descriptive-image"
                     }
                 }, 
-                "documents": {
+                "page links": {
                     "type": "array",
                     "title": "IMAGES",
                     "maxItems": 5,
