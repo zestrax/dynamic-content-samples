@@ -1,4 +1,5 @@
-﻿{
+﻿
+{
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/briefs/content-brief-type-library-1.json",
     "type": "object",
@@ -56,7 +57,7 @@
                     "title": "IMAGES",
                     "maxItems": 5,
                     "items": {
-                        "$ref": "../component-libraries/link-content-type-library.json#/definitions/descriptive-link"
+                        "$ref": "../component-libraries/links-content-type-library.json#/definitions/descriptive-link"
                     }
                 }
             }

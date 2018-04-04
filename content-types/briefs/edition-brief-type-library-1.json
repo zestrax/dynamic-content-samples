@@ -41,7 +41,7 @@
                     "title": "IMAGES",
                     "maxItems": 5,
                     "items": {
-                        "$ref": "../component-libraries/link-content-type-library.json#/definitions/descriptive-link"
+                        "$ref": "../component-libraries/links-content-type-library.json#/definitions/descriptive-link"
                     }
                 }
             }
