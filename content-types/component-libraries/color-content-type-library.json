@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/color-content-type-library.json",
     "type": "object",

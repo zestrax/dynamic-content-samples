@@ -1,0 +1,28 @@
+﻿{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/banners/image-banner-1.json",
+    "type": "object",
+    "title": "Campaign Brief 1",
+    "description": "campaign brief",
+    "properties": {
+        "edition briefs": {
+            "type": "array",
+            "title": "edition brief",
+            "description": "the brief for specific editions",
+            "maxItems": 5,
+            "items": {
+                "$ref": "./edition-briefs-type-library-1.json#/definitions/edition-brief"
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "propertyOrder": [
+        "image",
+        "textBlocks",
+        "callToAction"
+    ]
+}
