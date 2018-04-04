@@ -5,7 +5,7 @@
     "title": "Core type schema for dealing with images",
     "description": "schemas to wrap the image object",
     "definitions": {
-        "desciptive-image": {
+        "descriptive-image": {
             "type": "object",
             "title": "IMAGE",
             "properties": {

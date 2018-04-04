@@ -4,7 +4,8 @@
     "type": "object",
     "title": "Core type schema",
     "description": "core content type definitions to for brief specific content types",
-    "definitions": {     
+    "additionalProperties": false,
+    "definitions": {
         "edition-brief": {
             "type": "object",
             "title": "EDITION LEVEL BRIEF",
@@ -24,7 +25,7 @@
                     "title": "CONTENT BRIEFS",
                     "maxItems": 20,
                     "items": {
-                        "$ref": "../component-libraries/image-content-type-library.json#/definitions/descriptive-image"
+                        "$ref": "./content-brief-library.json#/definitions/content-brief"
                     }
                 },
                 "images": {
@@ -34,7 +35,7 @@
                     "items": {
                         "$ref": "../component-libraries/image-content-type-library.json#/definitions/descriptive-image"
                     }
-                }, 
+                },
                 "page links": {
                     "type": "array",
                     "title": "IMAGES",

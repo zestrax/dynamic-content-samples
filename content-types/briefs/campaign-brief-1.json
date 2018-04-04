@@ -1,6 +1,6 @@
 ﻿{
     "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/banners/image-banner-1.json",
+    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/briefs/campaign-brief-1.json",
     "type": "object",
     "title": "Campaign Brief 1",
     "description": "campaign brief",
