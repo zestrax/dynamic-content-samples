@@ -63,7 +63,7 @@
                 "classes"
             ]
         },
-        "desciptive-link": {
+        "descriptive-link": {
             "type": "object",
             "title": "URL LINK",
             "properties": {
