@@ -10,7 +10,7 @@
             "title": "brief reference name",
             "format": "text"
         },
-        "edition briefs": {
+        "edition-briefs": {
             "type": "array",
             "title": "edition brief",
             "description": "the brief for specific editions",
@@ -26,9 +26,8 @@
         }
     ],
     "propertyOrder": [
-        "image",
-        "textBlocks",
-        "callToAction"
+        "reference",
+        "edition-briefs"
     ]
 }
 
