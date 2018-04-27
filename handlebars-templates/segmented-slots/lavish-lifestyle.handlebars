@@ -1,0 +1,5 @@
+{{#each content-list}}
+    {{#compare segment "==" "lavish-lifestyle"}}
+        {{>mapping this.content.content-type}}
+    {{/compare}}
+{{/each}}
