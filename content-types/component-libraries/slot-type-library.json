@@ -44,6 +44,19 @@
                     "$ref": "#/definitions/banners"
                 }
             }
+        },
+        "localized-banner": {
+            "type": "object",
+            "title": "LOCALIZED CONTENT",
+            "description": "",
+            "properties": {
+                "language": {
+                    "$ref": "../component-libraries/locale-content-type-library.json#/definitions/language"
+                },
+                "content": {
+                    "$ref": "#/definitions/banners"
+                }
+            }
         }
     }
 }
