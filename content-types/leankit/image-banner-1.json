@@ -1,0 +1,38 @@
+﻿{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/banners/image-banner-1.json",
+    "type": "object",
+    "title": "Image Banner 1",
+    "description": "Image banner with ability to add 5 styled text blocks that can be positioned using percentage offsets (top:50%,left:50%)",
+    "properties": {
+        "leankit":{
+            "$ref": "../component-libraries/leankit-content-type-library.json#/definitions/leankit"
+        },
+        "image": {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+        },
+        "textBlocks": {
+            "type": "array",
+            "title": "Styled text blocks",
+            "description": "positioned styled text blocks",
+            "maxItems": 5,
+            "items": {
+                "$ref": "../component-libraries/text-css-styled-content-type-library.json#/definitions/positioned-styled-text-block"
+            }
+        },
+        "callToAction": {
+            "$ref": "../component-libraries/links-content-type-library.json#/definitions/relative-link"
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "propertyOrder": [
+        "leankit",
+        "image",
+        "textBlocks",
+        "callToAction"
+    ]
+}
