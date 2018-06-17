@@ -4,7 +4,6 @@
     "type": "object",
     "title": "Leankit integration schema",
     "description": "core content type components to build leankit integration",
-    "additionalProperties": false,
     "definitions": {
         "leankit": {
             "type": "object",
