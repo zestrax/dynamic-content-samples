@@ -1,6 +1,6 @@
 ﻿{
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/leankit-content-type-library.json",
+    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/LeanKit-content-type-library.json",
     "type": "object",
     "title": "Leankit integration schema",
     "description": "core content type components to build leankit integration",
