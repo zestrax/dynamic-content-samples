@@ -22,7 +22,11 @@
                     "type": "string",
                     "format": "text"
                 }
-            }
+            },
+            "propertyOrder": [
+                "card-id",
+                "status"
+            ]
         }
     }
 }
