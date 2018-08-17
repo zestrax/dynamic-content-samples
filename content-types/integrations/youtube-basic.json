@@ -10,7 +10,7 @@
     },
     "allOf": [
         {
-            "$ref": "https://bigcontent.io/cms/schema/v1/core#/definitions/content"
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
         }
     ],
     "propertyOrder": [
