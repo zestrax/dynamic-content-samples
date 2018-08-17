@@ -19,11 +19,10 @@
                     "title": "Video Title",
                     "type": "string",
                     "description": "Short Description of the video",
-                    "format": "text",
-                    "maxLength": 250
+                    "format": "text"
                 },
                 "thumbnail": {
-                    "thumb": "Thumbnail",
+                    "title": "Thumbnail",
                     "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
                 }
             },
