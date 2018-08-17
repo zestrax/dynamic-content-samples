@@ -1,0 +1,10 @@
+<div class="fullWidthDiv">
+    {{#if this.callToAction.url}}<a href="{{this.callToAction.url}}">{{/if}}
+        {{#with image}}
+            <img alt="{{../altText}}" class="fullWidthImg" src="{{>image-url}}.jpeg?w=1440">
+        {{/with}}
+       {{#each textBlocks}}
+            {{> positioned-styled-textblock}}
+        {{/each}}
+    {{#if this.callToAction.url}}</a>{{/if}}
+</div>

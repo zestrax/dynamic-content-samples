@@ -1,0 +1,8 @@
+<div class="">
+    {{#with image}}
+        <img alt="{{../altText}}" width="100%" src="{{>image-url}}.jpeg?w=350">
+    {{/with}}
+    <div id="status" style="">
+        Status: {{_meta/crparam/status}}
+    </div>
+</div>
