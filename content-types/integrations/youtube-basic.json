@@ -1,0 +1,20 @@
+﻿{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/integrations/yuotube-basic.json",
+    "type": "object",
+    "title": "youtube basic integration",
+    "description": "supports integration of youtube providing youtube link, title text and thumbnail image override",
+    "properties": {
+        "youtube-data": {
+            "$ref": "../component-libraries/youtube-content-type-library.json#/definitions/youtube-basic"
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "propertyOrder": [
+        "youtube-data"
+    ]
+}

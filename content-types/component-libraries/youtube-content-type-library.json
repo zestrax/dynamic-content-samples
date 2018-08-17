@@ -8,22 +8,24 @@
         "youtube-basic": {
             "type": "object",
             "title": "YOUTUBE VIDEO",
-            "link": {
-                "title": "YouTube Link",
-                "type": "string",
-                "description": "The YouTube link to the video",
-                "format": "uri"
-            },
-            "title": {
-                "title": "Video Title",
-                "type": "string",
-                "description": "Short Description of the video",
-                "format": "text",
-                "maxLength": 250
-            },
-            "thumbnail": {
-                "thumb": "Thumbnail",
-                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+            "properties":{
+                "link": {
+                    "title": "YouTube Link",
+                    "type": "string",
+                    "description": "The YouTube link to the video",
+                    "format": "uri"
+                },
+                "title": {
+                    "title": "Video Title",
+                    "type": "string",
+                    "description": "Short Description of the video",
+                    "format": "text",
+                    "maxLength": 250
+                },
+                "thumbnail": {
+                    "thumb": "Thumbnail",
+                    "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+                }
             }
         },
         "propertyOrder": [
