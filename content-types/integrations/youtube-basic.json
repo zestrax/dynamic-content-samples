@@ -6,12 +6,12 @@
     "description": "supports integration of youtube providing youtube link, title text and thumbnail image override",
     "properties": {
         "youtube-data": {
-            "$ref": "../component-libraries/youtube-content-type-library.json#/definitions/youtube-basic"
+            "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/component-libraries/youtube-content-type-library.json"
         }
     },
     "allOf": [
         {
-            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+            "$ref": "https://bigcontent.io/cms/schema/v1/core#/definitions/content"
         }
     ],
     "propertyOrder": [
