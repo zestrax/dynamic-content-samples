@@ -8,7 +8,7 @@
         "youtube-basic": {
             "type": "object",
             "title": "YOUTUBE VIDEO",
-            "properties":{
+            "properties": {
                 "link": {
                     "title": "YouTube Link",
                     "type": "string",
@@ -26,12 +26,12 @@
                     "thumb": "Thumbnail",
                     "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
                 }
-            }
-        },
-        "propertyOrder": [
-            "link",
-            "title",
-            "thumbnail"
-        ]
+            },
+            "propertyOrder": [
+                "link",
+                "title",
+                "thumbnail"
+            ]
+        }
     }
 }
