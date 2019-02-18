@@ -1,0 +1,164 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "http://c1-orig.adis.ws/c/metallica/event-schema",
+
+  "title": "Event",
+  "description": "An event, set list and other related info",
+
+  "allOf": [
+    { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content" }
+  ],
+
+  "type": "object",
+  "properties": {
+
+  "content-asset-id" : {
+    "type": "string",
+    "title": "Content Asset ID",
+    "minLength": 1,
+    "maxLength": 256
+  }, 
+  
+  "masthead": {
+   "allOf": [
+        {
+            "$ref": "http://c1-orig.adis.ws/c/metallica/mixins#/definitions/image"
+        },     
+       {
+            "type": "object",
+            "title": "Masthead images",
+            "description": ""
+       }
+    ]
+      
+  },
+
+    "location": {
+        "title": "Event location - City",
+        "type": "string"
+    },
+    
+    "location2": {
+        "title": "Event location - Country/State",
+        "type": "string"
+    },
+    
+    "venue": {
+        "title": "Event venue",
+        "type": "string"
+    },
+
+    "date": {
+        "title": "Event date",
+        "type": "string"
+      },
+
+    "tour": {
+        "title": "Tour Name",
+        "type": "string",
+        "enum": [
+          "WorldWired",
+          "placeholder"
+        ]
+      },
+
+    "setlist": {
+        "type": "array",
+        "items": {
+          "allOf": [
+            {
+              "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+            },
+            {
+              "properties": {
+                "contentType": {
+                  "title": "Set Portion",
+                  "enum": [
+                    "http://c1-orig.adis.ws/c/metallica/disc-schema"
+                  ]
+                }
+              }
+            }
+          ],
+          "minItems": 1,
+          "title": "Set List",
+          "description": ""
+        }
+      },
+
+    "social": {
+        "title": "Social",
+        "description": "hashtag or link",
+        "type": "string"
+    },
+    
+    "notes": {
+      "title": "Event Notes",
+      "description": "",
+      "type": "string",
+      "format": "markdown"
+    },
+    "buythisshowimages": {
+        "title": "Cover Images",
+        "type": "array",
+        "description": "",
+        "items": {
+          "$ref": "http://c1-orig.adis.ws/c/metallica/mixins#/definitions/image"
+        },
+        "maxItems": 2
+    },
+    "images": {
+        "title": "Associated Images",
+        "type": "array",
+        "description": "",
+        "items": {
+          "$ref": "http://c1-orig.adis.ws/c/metallica/mixins#/definitions/image"
+        },
+        "maxItems": 50
+     },
+     
+    "hero-video": {
+        "title": "Album Cover",
+        "description": "",
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/integrations/youtube-basic.json"
+          },
+          {
+            "title": "Hero Video (Youtube)"
+          }
+        ]
+    },
+    "videos-list": {
+          "type": "array",
+          "items": {
+            "allOf": [
+              {
+                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+              },
+              {
+                "properties": {
+                  "contentType": {
+                    "title": "Associated Videos (Youtube)",
+                    "enum": [
+                      "https://raw.githubusercontent.com/zestrax/dynamic-content-samples/Development/content-types/integrations/youtube-basic.json"
+                    ]
+                  }
+                }
+              }
+            ],
+            "minItems": 0,
+            "maxItems": 25,
+            "title": "Associated Videos (Youtube)",
+            "description": ""
+          }
+        }
+
+    
+
+  },
+  "propertyOrder": ["content-asset-id","masthead","location", "location2", "venue", "date", "tour", "setlist", "social", "notes", "buythisshowimages","images", "hero-video", "videos-list"],
+  "required": ["content-asset-id"]
+
+}
