@@ -1,4 +1,4 @@
-{
+﻿{
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
   "id": "http://c1-orig.adis.ws/c/metallica/event-schema",
 
@@ -130,7 +130,8 @@
           }
         ]
     },
-    "videos-list": {
+    "video-list": {
+          "title":"Videos of the Show",
           "type": "array",
           "items": {
             "allOf": [

@@ -10,10 +10,10 @@
             "title": "YOUTUBE VIDEO",
             "properties": {
                 "link": {
-                    "title": "YouTube Link",
+                    "title": "YouTube Video ID",
                     "type": "string",
-                    "description": "The YouTube link to the video",
-                    "format": "uri"
+                    "description": "The YouTube ID",
+                    "format": "string"
                 },
                 "title": {
                     "title": "Video Title",
